@@ -247,6 +247,7 @@ def try_methods_and_functions():
     """
     blob = rg.SimpleTurtle('turtle')
     blob.pen = rg.Pen('blue', 5)
+    blob.pen2 = rg.Pen('black', 3)
 
     blob.backward(150)
     blob.speed = 1
@@ -257,11 +258,10 @@ def try_methods_and_functions():
     blob.speed = 100
     blob.pen = rg.Pen('red', 35)
     draw_many_squares(blob, 8, 300, 60)
-    blob.pen = rg.Pen('black', 3)
+    blob.pen = blob.pen2
     blob.backward(200)
     blob.draw_circle(30)
     blob.draw_square(50)
-
 
     ####################################################################
     # DONE: 5. Implement this function, per its doc-string above.
